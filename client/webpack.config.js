@@ -11,6 +11,9 @@ module.exports = {
         path: path.resolve(__dirname, 'build'),
         filename: 'js/[name].bundle.js'
     },
+    optimization: {
+        runtimeChunk: 'single'
+    },
     devtool: 'source-map',
     resolve: {
         extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
